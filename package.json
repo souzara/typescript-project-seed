@@ -1,0 +1,43 @@
+{
+  "name": "typescript-project-seed",
+  "version": "1.0.0",
+  "description": "Typescript based project seed",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run watch\" \"npm run server\" ",
+    "server": "lite-server",
+    "watch": "webpack --watch --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souzara/typescript-project-seed.git"
+  },
+  "author": "Ricardo Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/souzara/typescript-project-seed/issues"
+  },
+  "homepage": "https://github.com/souzara/typescript-project-seed#readme",
+  "devDependencies": {
+    "@reactivex/rxjs": "^6.2.0",
+    "@types/chrome": "0.0.66",
+    "@types/inversify": "^2.0.33",
+    "@types/q": "^1.5.0",
+    "concurrently": "^3.5.1",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "@aspnet/signalr": "^1.0.0",
+    "inversify": "^4.13.0",
+    "q": "^1.5.1",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "6.2.0",
+    "rxjs-compat": "^6.2.0"
+  }
+}
